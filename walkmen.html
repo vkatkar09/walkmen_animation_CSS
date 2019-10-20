@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            animation-name:thunder;
+         animation-duration: 5s;
+         animation-timing-function:ease-in-out;
+         animation-iteration-count: infinite;
+         animation-delay: 0s;
+        }
+     div.walk {
+         overflow: hidden;
+         width:169px;
+         height:340px;
+         background-image: url('./img/kisscc0-walk-cycle-walking-girl-2-sprite-human-walking-man-sprite-sheet-5b71363677a312.94929813153414610249.png');
+         animation-name:walkmen;
+         animation-duration: 2s;
+         animation-timing-function: steps(8);
+         animation-iteration-count: infinite;
+         animation-delay: 0s;
+     }
+     @keyframes walkmen {
+         0%{background-position: 0px}
+         100%{background-position: -1345px;margin-left:900px;}
+     }
+
+     @keyframes thunder {
+         0%{background: url('./img/4s7085mbyy101.gif') no-repeat;background-size:cover;}
+         50%{background: url('./img/giphy.gif') no-repeat;background-size:cover;}
+         100%{background: url('./img/1d8f81db2475d448a36e4d3c1f183486.gif') no-repeat;background-size:cover;}
+     }
+    </style>
+</head>
+<body>
+    <div class="walk">
+
+    </div>
+</body>
+</html>
